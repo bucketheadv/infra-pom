@@ -85,6 +85,27 @@
             </dependency>
 
             <dependency>
+                <groupId>com.github.bucketheadv.infra-structure</groupId>
+                <artifactId>infra-core</artifactId>
+                <version>${infra.structure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-structure</groupId>
+                <artifactId>infra-db</artifactId>
+                <version>${infra.structure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-structure</groupId>
+                <artifactId>infra-redis</artifactId>
+                <version>${infra.structure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-structure</groupId>
+                <artifactId>infra-job</artifactId>
+                <version>${infra.structure.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
