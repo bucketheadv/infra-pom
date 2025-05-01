@@ -11,13 +11,13 @@
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.1.6-RELEASE</version>
+    <version>0.1.7-RELEASE</version>
 
     <properties>
         <java.version>21</java.version>
         <spring.boot.version>3.4.4</spring.boot.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
-        <infra.parent.version>0.1.6-RELEASE</infra.parent.version>
+        <infra.parent.version>0.1.7-RELEASE</infra.parent.version>
         <guava.version>33.3.1-jre</guava.version>
         <common.collections.version>4.4</common.collections.version>
         <commons.lang3.version>3.17.0</commons.lang3.version>
@@ -30,7 +30,8 @@
         <springdoc.kotlin.version>1.8.0</springdoc.kotlin.version>
         <kotlin.version>2.1.20</kotlin.version>
         <fastjson2.verion>2.0.57</fastjson2.verion>
-        <jackson.kotlin.version>2.18.3</jackson.kotlin.version>
+        <jackson.kotlin.version>2.19.0</jackson.kotlin.version>
+        <ktor.version>3.1.2</ktor.version>
     </properties>
 
     <dependencies>
@@ -99,11 +100,6 @@
                 <artifactId>infra-doc</artifactId>
                 <version>${infra.parent.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.infra.structure</groupId>
-                <artifactId>infra-kotlin</artifactId>
-                <version>${infra.parent.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.github.bucketheadv.infra-parent</groupId>
@@ -133,11 +129,6 @@
             <dependency>
                 <groupId>com.github.bucketheadv.infra-parent</groupId>
                 <artifactId>infra-doc</artifactId>
-                <version>${infra.parent.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.bucketheadv.infra-parent</groupId>
-                <artifactId>infra-kotlin</artifactId>
                 <version>${infra.parent.version}</version>
             </dependency>
 
@@ -229,6 +220,26 @@
                 <groupId>com.fasterxml.jackson.module</groupId>
                 <artifactId>jackson-module-kotlin</artifactId>
                 <version>${jackson.kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ktor</groupId>
+                <artifactId>ktor-client-core</artifactId>
+                <version>${ktor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ktor</groupId>
+                <artifactId>ktor-client-cio</artifactId>
+                <version>${ktor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ktor</groupId>
+                <artifactId>ktor-client-content-negotiation</artifactId>
+                <version>${ktor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ktor</groupId>
+                <artifactId>ktor-serialization-jackson</artifactId>
+                <version>${ktor.version}</version>
             </dependency>
 
             <dependency>
