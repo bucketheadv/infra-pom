@@ -11,13 +11,13 @@
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.3.0-RELEASE</version>
+    <version>0.3.1-RELEASE</version>
 
     <properties>
         <java.version>21</java.version>
         <spring.boot.version>3.5.0</spring.boot.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
-        <infra.parent.version>0.3.0-RELEASE</infra.parent.version>
+        <infra.parent.version>0.3.1-RELEASE</infra.parent.version>
         <guava.version>33.3.1-jre</guava.version>
         <common.collections.version>4.4</common.collections.version>
         <commons.lang3.version>3.17.0</commons.lang3.version>
@@ -33,6 +33,8 @@
         <fastjson2.verion>2.0.57</fastjson2.verion>
         <jackson.kotlin.version>2.19.0</jackson.kotlin.version>
         <ktor.version>3.1.2</ktor.version>
+        <hutool.version>5.8.38</hutool.version>
+        <poi.version>5.4.1</poi.version>
     </properties>
 
     <dependencies>
@@ -183,6 +185,17 @@
                 <groupId>com.xuxueli</groupId>
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl.job.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-poi</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
 
             <dependency>
