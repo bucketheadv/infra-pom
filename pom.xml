@@ -5,19 +5,19 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.3.4-RELEASE</version>
+    <version>0.4.0-RELEASE</version>
 
     <properties>
         <java.version>21</java.version>
         <spring.boot.version>3.5.0</spring.boot.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
-        <infra.parent.version>0.3.4-RELEASE</infra.parent.version>
+        <infra.parent.version>0.4.0-RELEASE</infra.parent.version>
         <guava.version>33.3.1-jre</guava.version>
         <common.collections.version>4.4</common.collections.version>
         <commons.lang3.version>3.17.0</commons.lang3.version>
@@ -35,6 +35,8 @@
         <ktor.version>3.1.2</ktor.version>
         <hutool.version>5.8.38</hutool.version>
         <poi.version>5.4.1</poi.version>
+        <jjwt.version>0.11.5</jjwt.version>
+        <jansi.version>2.4.2</jansi.version>
     </properties>
 
     <dependencies>
@@ -206,6 +208,29 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-poi</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.fusesource.jansi</groupId>
+                <artifactId>jansi</artifactId>
+                <version>${jansi.version}</version>
+            </dependency>
+
+            <!-- JWT -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt.version}</version>
             </dependency>
 
             <dependency>
