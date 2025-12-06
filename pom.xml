@@ -5,18 +5,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.7</version>
+        <version>4.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.6.2-RELEASE</version>
+    <version>0.7.0-RELEASE</version>
 
     <properties>
         <java.version>21</java.version>
-        <spring.boot.version>3.5.7</spring.boot.version>
-        <spring-cloud.version>2025.0.0</spring-cloud.version>
+        <spring.boot.version>4.0.0</spring.boot.version>
+        <spring-cloud.version>2025.1.0</spring-cloud.version>
         <infra.parent.version>0.6.2-RELEASE</infra.parent.version>
         <guava.version>33.5.0-jre</guava.version>
         <common.collections.version>4.5.0</common.collections.version>
