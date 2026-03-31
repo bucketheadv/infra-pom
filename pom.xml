@@ -11,13 +11,13 @@
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.9.4-RELEASE</version>
+    <version>0.9.5-RELEASE</version>
 
     <properties>
+        <infra.parent.version>0.9.5-RELEASE</infra.parent.version>
         <java.version>21</java.version>
         <spring.boot.version>4.0.5</spring.boot.version>
         <spring-cloud.version>2025.1.1</spring-cloud.version>
-        <infra.parent.version>0.9.4-RELEASE</infra.parent.version>
         <guava.version>33.5.0-jre</guava.version>
         <common.collections.version>4.5.0</common.collections.version>
         <commons.lang3.version>3.20.0</commons.lang3.version>
@@ -111,6 +111,11 @@
                 <artifactId>infra-script</artifactId>
                 <version>${infra.parent.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.infra.structure</groupId>
+                <artifactId>infra-rocketmq</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.github.bucketheadv.infra-parent</groupId>
@@ -145,6 +150,11 @@
             <dependency>
                 <groupId>com.github.bucketheadv.infra-parent</groupId>
                 <artifactId>infra-script</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-parent</groupId>
+                <artifactId>infra-rocketmq</artifactId>
                 <version>${infra.parent.version}</version>
             </dependency>
 
