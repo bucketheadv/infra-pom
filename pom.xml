@@ -11,10 +11,10 @@
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.9.5-RELEASE</version>
+    <version>0.9.6-RELEASE</version>
 
     <properties>
-        <infra.parent.version>0.9.5-RELEASE</infra.parent.version>
+        <infra.parent.version>0.9.6-RELEASE</infra.parent.version>
         <java.version>21</java.version>
         <spring.boot.version>4.0.5</spring.boot.version>
         <spring-cloud.version>2025.1.1</spring-cloud.version>
