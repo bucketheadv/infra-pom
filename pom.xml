@@ -14,7 +14,7 @@
     <version>0.11.0-RELEASE</version>
 
     <properties>
-        <infra.parent.version>0.10.0-RELEASE</infra.parent.version>
+        <infra.parent.version>0.11.0-RELEASE</infra.parent.version>
         <java.version>21</java.version>
         <spring.boot.version>4.1.0</spring.boot.version>
         <spring-cloud.version>2025.1.2</spring-cloud.version>
