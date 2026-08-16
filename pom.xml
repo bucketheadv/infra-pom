@@ -11,6 +11,8 @@
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
+    <!-- 发布规范：升级本版本号时，必须同步更新 <infra.parent.version> 属性，二者保持一致；
+         infra-parent 各模块版本均由该属性统一管理，只改其一会导致下游模块解析到旧版本。 -->
     <version>0.12.0-RELEASE</version>
 
     <properties>
