@@ -11,7 +11,7 @@
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.10.0-RELEASE</version>
+    <version>0.11.0-RELEASE</version>
 
     <properties>
         <infra.parent.version>0.10.0-RELEASE</infra.parent.version>
