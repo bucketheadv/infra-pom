@@ -5,39 +5,39 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.infra.structure</groupId>
     <artifactId>infra-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.9.6-RELEASE</version>
+    <version>0.10.0-RELEASE</version>
 
     <properties>
-        <infra.parent.version>0.9.6-RELEASE</infra.parent.version>
+        <infra.parent.version>0.10.0-RELEASE</infra.parent.version>
         <java.version>21</java.version>
-        <spring.boot.version>4.0.5</spring.boot.version>
-        <spring-cloud.version>2025.1.1</spring-cloud.version>
-        <guava.version>33.5.0-jre</guava.version>
+        <spring.boot.version>4.1.0</spring.boot.version>
+        <spring-cloud.version>2025.1.2</spring-cloud.version>
+        <guava.version>33.6.0-jre</guava.version>
         <common.collections.version>4.5.0</common.collections.version>
         <commons.lang3.version>3.20.0</commons.lang3.version>
-        <mybatis.version>4.0.0</mybatis.version>
-        <mybatis.flex.version>1.11.6</mybatis.flex.version>
+        <mybatis.version>4.0.1</mybatis.version>
+        <mybatis.flex.version>1.11.8</mybatis.flex.version>
         <mybaits.flex.kotlin.version>1.1.3</mybaits.flex.kotlin.version>
-        <joda.version>2.14.1</joda.version>
-        <xxl.job.version>3.3.2</xxl.job.version>
-        <rocketmq.version>5.4.0</rocketmq.version>
-        <rocketmq.spring.version>2.3.5</rocketmq.spring.version>
-        <swagger.version>3.0.2</swagger.version>
+        <joda.version>2.14.3</joda.version>
+        <xxl.job.version>3.4.2</xxl.job.version>
+        <rocketmq.version>5.5.0</rocketmq.version>
+        <rocketmq.spring.version>2.3.6</rocketmq.spring.version>
+        <swagger.version>3.1.0</swagger.version>
         <springdoc.kotlin.version>1.8.0</springdoc.kotlin.version>
-        <kotlin.version>2.3.20</kotlin.version>
-        <fastjson2.version>2.0.61</fastjson2.version>
-        <jackson.kotlin.version>2.21.2</jackson.kotlin.version>
-        <ktor.version>3.3.0</ktor.version>
-        <poi.version>5.4.1</poi.version>
+        <kotlin.version>2.3.21</kotlin.version>
+        <fastjson2.version>2.0.64</fastjson2.version>
+        <jackson.kotlin.version>2.22.1</jackson.kotlin.version>
+        <ktor.version>3.5.2</ktor.version>
+        <poi.version>5.5.1</poi.version>
         <jjwt.version>0.13.0</jjwt.version>
-        <jansi.version>2.4.2</jansi.version>
-        <lombok.version>1.18.44</lombok.version>
+        <jansi.version>2.4.3</jansi.version>
+        <lombok.version>1.18.46</lombok.version>
     </properties>
 
     <dependencies>
@@ -116,6 +116,21 @@
                 <artifactId>infra-rocketmq</artifactId>
                 <version>${infra.parent.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.infra.structure</groupId>
+                <artifactId>infra-schedule</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.infra.structure</groupId>
+                <artifactId>infra-trace</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.infra.structure</groupId>
+                <artifactId>infra-sso</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.github.bucketheadv.infra-parent</groupId>
@@ -155,6 +170,21 @@
             <dependency>
                 <groupId>com.github.bucketheadv.infra-parent</groupId>
                 <artifactId>infra-rocketmq</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-parent</groupId>
+                <artifactId>infra-schedule</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-parent</groupId>
+                <artifactId>infra-trace</artifactId>
+                <version>${infra.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bucketheadv.infra-parent</groupId>
+                <artifactId>infra-sso</artifactId>
                 <version>${infra.parent.version}</version>
             </dependency>
 
